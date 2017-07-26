@@ -715,7 +715,7 @@ namespace C3Mod
                             args.Player.SendMessage("Not an available gametype", Color.DarkCyan);
                     }
                     else
-                        args.Player.SendMessage("Incorrect format: /vote <gametype>", Color.OrangeRed);
+                        args.Player.SendMessage("Incorrect format: /start <gametype>", Color.OrangeRed);
                 }
                 else
                     args.Player.SendMessage("Not enough available players to make a vote!", Color.DarkCyan);
