@@ -239,7 +239,7 @@ namespace C3Mod
             Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetFFASpawn, "setffaspawn"));
             Commands.ChatCommands.Add(new Command("setflags", C3Commands.AddFFAArena, "addffaarena"));
 
-            Commands.ChatCommands.Add(new Command("vote", C3Commands.StartVote, "vote"));
+            Commands.ChatCommands.Add(new Command("start", C3Commands.StartVote, "start"));
             Commands.ChatCommands.Add(new Command("joinvote", C3Commands.JoinVote, "join"));
             Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.Stop, "end"));
             Commands.ChatCommands.Add(new Command(C3Commands.Quit, "quit"));
@@ -515,7 +515,7 @@ namespace C3Mod
                 }
                 catch (Exception ex)
                 {
-                    //Log.Error(ex.ToString());
+                    TShock.Log.Error(ex.ToString());
                 }
             }
         }

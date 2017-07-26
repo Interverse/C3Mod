@@ -18,20 +18,19 @@ namespace C3Mod
         {
             try
             {
-                if (File.Exists(C3ConfigPath))
-                {
-                    C3Mod.C3Config = C3ConfigFile.Read(C3ConfigPath);
+                if (!File.Exists(C3ConfigPath)) {
+                    C3Mod.C3Config.Write(C3ConfigPath);
                     // Add all the missing config properties in the json file
                 }
-                C3Mod.C3Config.Write(C3ConfigPath);
+                C3Mod.C3Config = C3ConfigFile.Read(C3ConfigPath);
             }
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error in config file");
                 Console.ForegroundColor = ConsoleColor.Gray;
-                //Log.Error("Config Exception");
-                //Log.Error(ex.ToString());
+                TShock.Log.Error("Config Exception");
+                TShock.Log.Error(ex.ToString());
             }
         }
         //Converted v2.2
