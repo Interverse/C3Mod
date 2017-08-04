@@ -166,98 +166,98 @@ namespace C3Mod
             #region AddCommands
             if (C3Mod.C3Config.TeamColor1 == 1)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Flag, "setctfredflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Spawn, "setctfredspawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflagredspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam1Spawn, "setduelredspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam1Spawn, "settdmredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Flag, "setctfredflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Spawn, "setctfredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflagredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam1Spawn, "setduelredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam1Spawn, "settdmredspawn"));
             }
             else if (C3Mod.C3Config.TeamColor1 == 2)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Flag, "setctfgreenflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Spawn, "setctfgreenspawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflaggreenspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam1Spawn, "setduelgreenspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam1Spawn, "settdmgreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Flag, "setctfgreenflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Spawn, "setctfgreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflaggreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam1Spawn, "setduelgreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam1Spawn, "settdmgreenspawn"));
             }
             else if (C3Mod.C3Config.TeamColor1 == 3)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Flag, "setctfblueflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Spawn, "setctfbluespawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflagbluespawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam1Spawn, "setduelbluespawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam1Spawn, "settdmbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Flag, "setctfblueflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Spawn, "setctfbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflagbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam1Spawn, "setduelbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam1Spawn, "settdmbluespawn"));
             }
             else if (C3Mod.C3Config.TeamColor1 == 4)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Flag, "setctfyellowflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam1Spawn, "setctfyellowspawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflagyellowspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam1Spawn, "setduelyellowspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam1Spawn, "settdmyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Flag, "setctfyellowflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam1Spawn, "setctfyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam1Spawn, "setoneflagyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam1Spawn, "setduelyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam1Spawn, "settdmyellowspawn"));
             }
             if (C3Mod.C3Config.TeamColor2 == 1)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Flag, "setctfredflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Spawn, "setctfredspawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflagredspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam2Spawn, "setduelredspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam2Spawn, "settdmredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Flag, "setctfredflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Spawn, "setctfredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflagredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam2Spawn, "setduelredspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam2Spawn, "settdmredspawn"));
             }
             else if (C3Mod.C3Config.TeamColor2 == 2)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Flag, "setctfgreenflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Spawn, "setctfgreenspawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflaggreenspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam2Spawn, "setduelgreenspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam2Spawn, "settdmgreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Flag, "setctfgreenflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Spawn, "setctfgreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflaggreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam2Spawn, "setduelgreenspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam2Spawn, "settdmgreenspawn"));
             }
             else if (C3Mod.C3Config.TeamColor2 == 3)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Flag, "setctfblueflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Spawn, "setctfbluespawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflagbluespawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam2Spawn, "setduelbluespawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam2Spawn, "settdmbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Flag, "setctfblueflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Spawn, "setctfbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflagbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam2Spawn, "setduelbluespawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam2Spawn, "settdmbluespawn"));
             }
             else if (C3Mod.C3Config.TeamColor2 == 4)
             {
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Flag, "setctfyellowflag"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetCTFTeam2Spawn, "setctfyellowspawn"));
-                Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflagyellowspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetDuelTeam2Spawn, "setduelyellowspawn"));
-                Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetTDMTeam2Spawn, "settdmyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Flag, "setctfyellowflag"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetCTFTeam2Spawn, "setctfyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlagTeam2Spawn, "setoneflagyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetDuelTeam2Spawn, "setduelyellowspawn"));
+                Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetTDMTeam2Spawn, "settdmyellowspawn"));
             }
 
 
-            Commands.ChatCommands.Add(new Command("setflags", C3Commands.AddCTFArena, "addctfarena"));
-            Commands.ChatCommands.Add(new Command("setflags", C3Commands.SetOneFlag, "setoneflag"));
-            Commands.ChatCommands.Add(new Command("setflags", C3Commands.AddOneFlagArena, "addoneflagarena"));
-            Commands.ChatCommands.Add(new Command("setflags", C3Commands.AddDuelArena, "addduelarena"));
-            Commands.ChatCommands.Add(new Command("setflags", C3Commands.AddTDMArena, "addtdmarena"));
+            Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.AddCTFArena, "addctfarena"));
+            Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.SetOneFlag, "setoneflag"));
+            Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.AddOneFlagArena, "addoneflagarena"));
+            Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.AddDuelArena, "addduelarena"));
+            Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.AddTDMArena, "addtdmarena"));
 
-            Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetFFASpawn, "setffaspawn"));
-            Commands.ChatCommands.Add(new Command("setflags", C3Commands.AddFFAArena, "addffaarena"));
+            Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetFFASpawn, "setffaspawn"));
+            Commands.ChatCommands.Add(new Command("c3mod.setflags", C3Commands.AddFFAArena, "addffaarena"));
 
-            Commands.ChatCommands.Add(new Command("start", C3Commands.StartVote, "start"));
-            Commands.ChatCommands.Add(new Command("joinvote", C3Commands.JoinVote, "join"));
-            Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.Stop, "end"));
+            Commands.ChatCommands.Add(new Command("c3mod.start", C3Commands.StartVote, "start"));
+            Commands.ChatCommands.Add(new Command("c3mod.joinvote", C3Commands.JoinVote, "join"));
+            Commands.ChatCommands.Add(new Command("c3mod.managec3settings", C3Commands.Stop, "end"));
             Commands.ChatCommands.Add(new Command(C3Commands.Quit, "quit"));
-            Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.SetCTFLimit, "setctflimit"));
-            Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.SetOneFlagLimit, "setoneflaglimit"));
-            Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.SetDuelLimit, "setduellimit"));
-            Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.SetTDMLimit, "settdmlimit"));
+            Commands.ChatCommands.Add(new Command("c3mod.managec3settings", C3Commands.SetCTFLimit, "setctflimit"));
+            Commands.ChatCommands.Add(new Command("c3mod.managec3settings", C3Commands.SetOneFlagLimit, "setoneflaglimit"));
+            Commands.ChatCommands.Add(new Command("c3mod.managec3settings", C3Commands.SetDuelLimit, "setduellimit"));
+            Commands.ChatCommands.Add(new Command("c3mod.managec3settings", C3Commands.SetTDMLimit, "settdmlimit"));
 
-            Commands.ChatCommands.Add(new Command("managec3settings", C3Commands.SetFFALimit, "setffalimit"));
+            Commands.ChatCommands.Add(new Command("c3mod.managec3settings", C3Commands.SetFFALimit, "setffalimit"));
 
-            Commands.ChatCommands.Add(new Command("cvote", C3Commands.CancelVote, "cvote"));
-            Commands.ChatCommands.Add(new Command("duel", C3Commands.ChallengePlayer, "duel"));
+            Commands.ChatCommands.Add(new Command("c3mod.cvote", C3Commands.CancelVote, "cvote"));
+            Commands.ChatCommands.Add(new Command("c3mod.duel", C3Commands.ChallengePlayer, "duel"));
             Commands.ChatCommands.Add(new Command(C3Commands.AcceptChallenge, "accept"));
 
             Commands.ChatCommands.Add(new Command(C3Commands.ListArenaID, "list"));
-            Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetApocPlayerSpawn, "setapocplayerspawn"));
-            Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetApocMonsterSpawn, "setapocmonsterspawn"));
-            Commands.ChatCommands.Add(new Command("setspawns", C3Commands.SetApocSpectatorSpawn, "setapocspectatorspawn"));
+            Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetApocPlayerSpawn, "setapocplayerspawn"));
+            Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetApocMonsterSpawn, "setapocmonsterspawn"));
+            Commands.ChatCommands.Add(new Command("c3mod.setspawns", C3Commands.SetApocSpectatorSpawn, "setapocspectatorspawn"));
             #endregion
 
             #region FlagPoints
