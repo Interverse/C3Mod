@@ -17,6 +17,7 @@ namespace C3Mod.GameTypes
         public static Vector2[] SpawnPoint = new Vector2[2];
         public static int Team1Score = 0;
         public static int Team2Score = 0;
+        public static int NoTeams = 0;
         public static bool[] playersDead = new bool[Main.maxNetPlayers];
         public static DateTime countDownTick = DateTime.UtcNow;
         public static DateTime voteCountDown = DateTime.UtcNow;
@@ -553,6 +554,7 @@ namespace C3Mod.GameTypes
                         C3Tools.ResetGameType("oneflag");
                         OneFlagCTF.FlagPoint = new Vector2();
                         OneFlagCTF.SpawnPoint = new Vector2[2];
+                        NoTeams = 0;
                         return;
                     }
                     if (Team2Score == C3Mod.C3Config.CTFScoreLimit)
@@ -587,6 +589,7 @@ namespace C3Mod.GameTypes
                         C3Tools.ResetGameType("oneflag");
                         OneFlagCTF.FlagPoint = new Vector2();
                         OneFlagCTF.SpawnPoint = new Vector2[2];
+                        NoTeams = 0;
                         return;
                     }
                 }
@@ -625,11 +628,18 @@ namespace C3Mod.GameTypes
 
             if (team1players == 0 || team2players == 0)
             {
+                NoTeams++;
+            } else {
+                NoTeams = 0;
+            }
+
+            if (NoTeams >= 3) {
                 C3Tools.BroadcastMessageToGametype("oneflag", "Not enough players to start One Flag CTF", Color.DarkCyan);
                 OneFlagGameRunning = false;
                 OneFlagGameCountdown = false;
                 OneFlagCTF.FlagPoint = new Vector2();
                 OneFlagCTF.SpawnPoint = new Vector2[2];
+                NoTeams = 0;
                 return 0;
             }
             return 1;

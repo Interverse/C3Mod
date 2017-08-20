@@ -15,6 +15,7 @@ namespace C3Mod.GameTypes
         public static Vector2[] TDMSpawns = new Vector2[2];
         public static int StartCount = 5;
         public static int VoteCount = 0;
+        public static int NoTeams = 0;
         public static DateTime countDownTick = DateTime.UtcNow;
         public static DateTime voteCountDown = DateTime.UtcNow;
         public static DateTime scoreNotify = DateTime.UtcNow;
@@ -252,11 +253,18 @@ namespace C3Mod.GameTypes
                     }
                     if (Team1Players == 0 || Team2Players == 0)
                     {
+                        NoTeams++;
+                    } else {
+                        NoTeams = 0;
+                    }
+
+                    if (NoTeams >= 3) {
                         C3Tools.BroadcastMessageToGametype("tdm", "Not enough players to continue, ending game", Color.DarkCyan);
                         TDMRunning = false;
                         TpToSpawns(false);
                         C3Tools.ResetGameType("tdm");
                         TDM.TDMSpawns = new Vector2[2];
+                        NoTeams = 0;
                         return;
                     }
 
@@ -291,6 +299,7 @@ namespace C3Mod.GameTypes
                         TpToSpawns(false);
                         C3Tools.ResetGameType("tdm");
                         TDM.TDMSpawns = new Vector2[2];
+                        NoTeams = 0;
                         return;
                     }
 
@@ -325,6 +334,7 @@ namespace C3Mod.GameTypes
                         TpToSpawns(false);
                         C3Tools.ResetGameType("tdm");
                         TDM.TDMSpawns = new Vector2[2];
+                        NoTeams = 0;
                         return;
                     }
                 }

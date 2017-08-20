@@ -15,6 +15,7 @@ namespace C3Mod.GameTypes
         public static bool DuelCountdown = false;
         public static Vector2[] DuelSpawns = new Vector2[2];
         public static int StartCount = 5;
+        public static int NoPlayers = 0;
         public static DateTime countDownTick = DateTime.UtcNow;
         public static int Team1PlayerScore = 0;
         public static int Team2PlayerScore = 0;
@@ -169,6 +170,12 @@ namespace C3Mod.GameTypes
 
                 if (Team1PlayerCount == 0 || Team2PlayerCount == 0)
                 {
+                    NoPlayers++;
+                } else {
+                    NoPlayers = 0;
+                }
+
+                if (NoPlayers >= 3) {
                     C3Tools.BroadcastMessageToGametype("1v1", "Opponent left, ending game", Color.DarkCyan);
                     DuelRunning = false;
                     TpToSpawns(false);
@@ -176,8 +183,10 @@ namespace C3Mod.GameTypes
                     Team1Player = null;
                     Team2Player = null;
                     DuelSpawns = new Vector2[2];
+                    NoPlayers = 0;
                     return;
                 }
+
 
                 if (Team2PlayerScore == C3Mod.C3Config.DuelScoreLimit)
                 {
@@ -196,6 +205,7 @@ namespace C3Mod.GameTypes
                     C3Tools.ResetGameType("1v1");
                     Team1Player = null;
                     Team2Player = null;
+                    NoPlayers = 0;
                     DuelSpawns = new Vector2[2];
                     return;
                 }
@@ -217,6 +227,7 @@ namespace C3Mod.GameTypes
                     C3Tools.ResetGameType("1v1");
                     Team1Player = null;
                     Team2Player = null;
+                    NoPlayers = 0;
                     DuelSpawns = new Vector2[2];
                     return;                    
                 }

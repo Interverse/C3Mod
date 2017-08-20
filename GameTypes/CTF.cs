@@ -19,6 +19,7 @@ namespace C3Mod.GameTypes
         public static Vector2[] spawnPoints = new Vector2[2];
         public static int Team1Score = 0;
         public static int Team2Score = 0;
+        public static int NoTeams = 0;
         public static bool[] playersDead = new bool[Main.maxNetPlayers];
         public static DateTime countDownTick = DateTime.UtcNow;
         public static DateTime voteCountDown = DateTime.UtcNow;
@@ -300,12 +301,19 @@ namespace C3Mod.GameTypes
                     }
                     if (team1players == 0 || team2players == 0)
                     {
+                        NoTeams++;
+                    } else {
+                        NoTeams = 0;
+                    }
+
+                    if (NoTeams >= 3) {
                         C3Tools.BroadcastMessageToGametype("ctf", "Capture the Flag stopped, Not enough players to continue", Color.DarkCyan);
                         CTFGameRunning = false;
                         TpToSpawns(false);
                         C3Tools.ResetGameType("ctf");
                         flagPoints = new Vector2[2];
                         spawnPoints = new Vector2[2];
+                        NoTeams = 0;
                         return;
                     }
 
@@ -521,6 +529,7 @@ namespace C3Mod.GameTypes
                     C3Tools.ResetGameType("ctf");
                     flagPoints = new Vector2[2];
                     spawnPoints = new Vector2[2];
+                    NoTeams = 0;
                     return;
                 }
                 if (Team1Score == C3Mod.C3Config.CTFScoreLimit)
@@ -554,6 +563,7 @@ namespace C3Mod.GameTypes
                     C3Tools.ResetGameType("ctf");
                     flagPoints = new Vector2[2];
                     spawnPoints = new Vector2[2];
+                    NoTeams = 0;
                     return;
                 }
             }

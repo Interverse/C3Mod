@@ -124,42 +124,42 @@ namespace C3Mod
             {
                 if (group.Name != "superadmin")
                 {
-                    if (group.HasPermission("vote"))
+                    if (group.HasPermission("c3mod.vote"))
                         vote = true;
-                    if (group.HasPermission("joinvote"))
+                    if (group.HasPermission("c3mod.joinvote"))
                         joinvote = true;
-                    if (group.HasPermission("setflags"))
+                    if (group.HasPermission("c3mod.setflags"))
                         setflags = true;
-                    if (group.HasPermission("managec3settings"))
+                    if (group.HasPermission("c3mod.managec3settings"))
                         managec3settings = true;
-                    if (group.HasPermission("cvote"))
+                    if (group.HasPermission("c3mod.cvote"))
                         cvote = true;
-                    if (group.HasPermission("duel"))
+                    if (group.HasPermission("c3mod.duel"))
                         duel = true;
-                    if (group.HasPermission("setspawns"))
+                    if (group.HasPermission("c3mod.setspawns"))
                         setspawns = true;
                 }
             }
             List<string> perm = new List<string>();
             if (!vote)
-                perm.Add("vote");
+                perm.Add("c3mod.vote");
             if (!joinvote)
-                perm.Add("joinvote");
+                perm.Add("c3mod.joinvote");
             if (!duel)
-                perm.Add("duel");
+                perm.Add("c3mod.duel");
             TShock.Groups.AddPermissions("default", perm);
 
             perm.Clear();
             if (!setflags)
-                perm.Add("setflags");
+                perm.Add("c3mod.setflags");
             if (!setflags)
-                perm.Add("setspawns");
+                perm.Add("c3mod.setspawns");
             if (!managec3settings)
-                perm.Add("managec3settings");
+                perm.Add("c3mod.managec3settings");
             if (!cvote)
-                perm.Add("cvote");
+                perm.Add("c3mod.cvote");
             if (!setspawns)
-                perm.Add("setspawns");
+                perm.Add("c3mod.setspawns");
             TShock.Groups.AddPermissions("trustedadmin", perm);
             #endregion
             //Converted v2.2
